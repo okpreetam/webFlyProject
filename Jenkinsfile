@@ -7,7 +7,6 @@ pipeline {
         stage("Test"){
             steps{
                 // mvn test
-                node(label: 'linux')
                 sh "mvn test"
                 slackSend channel: 'jenkinsupdate', message: 'Job Started'
 
