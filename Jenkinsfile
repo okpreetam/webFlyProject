@@ -52,7 +52,7 @@ pipeline {
         }
         failure{
             echo "========pipeline execution failed========"
-             slackSend channel: 'jenkinsupdate', message: 'Job Failed'
+             slackSend channel: 'jenkinsupdate', message: 'Job Failed :('
         }
     }
 }
